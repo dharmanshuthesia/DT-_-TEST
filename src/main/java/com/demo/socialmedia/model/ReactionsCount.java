@@ -23,11 +23,6 @@ public class ReactionsCount {
     @Column
     private Long sad = 0L;
 
-//    @ManyToOne
-//    @JoinColumn(name = "user_id")
-//    @JsonIgnore
-//    private User user;
-
     @ManyToOne
     @JoinColumn(name = "postId")
     @JsonIgnore
@@ -86,14 +81,6 @@ public class ReactionsCount {
        this.sad = sad;
     }
 
-//    public User getUser() {
-//        return user;
-//    }
-//
-//    public void setUser(User user) {
-//        this.user = user;
-//    }
-
     @Override
     public String toString() {
         return "Reactions{" +
@@ -102,7 +89,6 @@ public class ReactionsCount {
                 ", Laugh=" + laugh +
                 ", Angry=" + angry +
                 ", Sad=" + sad +
-//                ", user=" + user +
                 '}';
     }
 

@@ -43,15 +43,15 @@ public class PostRepositoryUnitTest {
     public void setUp() {
         this.userA = new User("testUserA", "exampleA@google.com", "password", null);
         userRepository.save(userA);
-        this.postA1 = new Post("Test title 1 by UserA", "Test content body of the post", new Date(), userA.getUsername());
-        this.postA2 = new Post("Test title 2 by UserA", "Test content body of the post", new Date(), userA.getUsername());
+        this.postA1 = new Post("Test title 1 by UserA", "Test content body of the post", new Date());
+        this.postA2 = new Post("Test title 2 by UserA", "Test content body of the post", new Date());
         postA1.setUser(userA);
         postA2.setUser(userA);
 
         this.userB = new User("testUserB", "exampleB@google.com", "password", null);
         userRepository.save(userB);
-        this.postB1 = new Post("Test title 1 by UserB", "Other test content body of the post", new Date(), "testUser");
-        this.postB2 = new Post("Test title 2 by UserB", "Other test content body of the post", new Date(), "testUser");
+        this.postB1 = new Post("Test title 1 by UserB", "Other test content body of the post", new Date());
+        this.postB2 = new Post("Test title 2 by UserB", "Other test content body of the post", new Date());
         postB1.setUser(userB);
         postB2.setUser(userB);
 
