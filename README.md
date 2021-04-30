@@ -1,28 +1,31 @@
-# Social-Media-Project
+# Social Media Site Rest API
 
-<h1 style=color:teal>Social Media</h1>
+A REST API built in Spring Boot for a demo social media website. Uses a PostgreSQL database.<br>
+A Vue frontend that consumes this API can be found here: [Social-Media-Vue-FrontEnd](https://github.com/qelery/Social-Media-Vue-FrontEnd)
+
+
 <h2 style="color: darkgray">EndPoints</h2>
-<h4>
 
-| Request Type | URL| Request Body | Request Header |
-|--|--|--|--|
-| GET |  /api/posts| None | Authorization Bearer TOKEN|
-| GET|/api/posts/{postId}|None |Authorization Bearer TOKEN|
-| GET| /api/posts/{postId}/comments|None|Authorization Bearer TOKEN|
-| POST| /api/posts | Post postObject|Authorization Bearer TOKEN|
-| POST| /api/posts/{postId}/comments | Comment commentObject|Authorization Bearer TOKEN|
-| POST| /api/posts/{postId}/reactions/{reaction} | none|Authorization Bearer TOKEN|
-| PUT| /api/posts/{postId} | Post postObject|Authorization Bearer TOKEN|
-| PUT| /posts/{postId}/comments/{commentId} | Comment commentObject|Authorization Bearer TOKEN|
-| DELETE| /api/posts | none |Authorization Bearer TOKEN|
-| DELETE| /api/posts/{postId} | none|Authorization Bearer TOKEN|
-| DELETE| /api/posts/{postId}/comments/{commentId} | none|Authorization Bearer TOKEN|
-| DELETE| /api/posts/{postId}/comments | none|Authorization Bearer TOKEN|
-| POST | /auth/users/register | User userObject | none |
-| POST | /auth/users/login | LoginRequest loginRequestObject | none |
-| PUT | /auth/users/passwordreset | PasswordReset passwordResetObject | none|
 
-</h4>
+ Request Type | URL| Request Body | Request Header|
+ ------------ |------------ | ------------- | ------------- |
+ GET |  /api/posts| None | Authorization Bearer TOKEN|
+ GET|/api/posts/{postId}|None |Authorization Bearer TOKEN|
+ GET| /api/posts/{postId}/comments|None|Authorization Bearer TOKEN|
+POST| /api/posts | Post postObject|Authorization Bearer TOKEN|
+ POST| /api/posts/{postId}/comments | Comment commentObject|Authorization Bearer TOKEN|
+ POST| /api/posts/{postId}/reactions/{reaction} | none|Authorization Bearer TOKEN|
+ PUT| /api/posts/{postId} | Post postObject|Authorization Bearer TOKEN|
+ PUT| /posts/{postId}/comments/{commentId} | Comment commentObject|Authorization Bearer TOKEN|
+ DELETE| /api/posts | none |Authorization Bearer TOKEN|
+ DELETE| /api/posts/{postId} | none|Authorization Bearer TOKEN|
+ DELETE| /api/posts/{postId}/comments/{commentId} | none|Authorization Bearer TOKEN|
+ DELETE| /api/posts/{postId}/comments | none|Authorization Bearer TOKEN|
+ POST | /auth/users/register | User userObject | none |
+ POST | /auth/users/login | LoginRequest loginRequestObject | none |
+ PUT | /auth/users/passwordreset | PasswordReset passwordResetObject | none|
+
+
 <h2 style="color: darkgray">Features</h2>
 <ul>
   <li>Able to Get Posts, Comments, Reactions and Username</li>
